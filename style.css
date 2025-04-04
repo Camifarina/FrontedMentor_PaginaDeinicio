@@ -10,32 +10,84 @@
 :root{
     /* Colores Primarios */
     --Strong_Cyan: hsl(171, 66%, 44%);
+    --Cyan_oscuro: #219F89;
     --Light_Blue: hsl(233, 100%, 69%);
+    --Blue_oscuro: #5161DA;
 
     /* Colores Neutros */
     --Dark_Grayish_Blue: hsl(210, 10%, 33%);
     --Grayish_Blue: hsl(201, 11%, 66%);
+    --Texto_botones: #F2FCFF;
 }
 
 /* DESKTOP FIRST */
 
 h1{
-    font-size: 36px;
+    font-size: 53px;
     color: var(--Dark_Grayish_Blue);
 }
 h2{
-    font-size: 22px;
+    font-size: 42px;
     color: var(--Dark_Grayish_Blue);
 }
 h3{
-    font-size: 18px;
+    font-size: 28px;
     color: var(--Dark_Grayish_Blue);
 }
 p{
-    font-size: 14px;
+    font-size: 24px;
     color: var(--Grayish_Blue);
 }
 
 .oculto{
     display: none;
+}
+
+.seccion1 .fondo_encabezado{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.seccion1{
+    width: 100vw;
+    padding: 156px 197px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion1 .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 240px;
+    /* width: 880px; */
+}
+
+.seccion1 .botones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.seccion1 .botones .btn-ios, .seccion1 .botones .btn-mac{
+    padding: 22px 44px;
+    border-radius: 50px;
+    border: none;
+    font-size: 22px;
+    color: var(--Texto_botones);
+    cursor: pointer;
+}
+.seccion1 .botones .btn-ios{
+    background-color: var(--Strong_Cyan);
+    box-shadow: 0 4px 0 var(--Cyan_oscuro);
+}
+.seccion1 .botones .btn-mac{
+    background-color: var(--Light_Blue);
+    box-shadow: 0 4px 0 var(--Blue_oscuro);
 }
